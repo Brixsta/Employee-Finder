@@ -1,0 +1,8 @@
+.employee-finder-content {
+  width: 1440px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
