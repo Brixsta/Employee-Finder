@@ -1,6 +1,7 @@
 import '../css/App.css';
 import EmployeeFinderHeader from './EmployeeFinderHeader';
 import EmployeeFinderContent from './EmployeeFinderContent';
+import EmployeeProfileHeader from './EmployeeProfileHeader';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -124,11 +125,13 @@ class App extends React.Component {
         },
       ],
       filtered: null,
-      targetEmployee: ''
+      targetEmployee: '',
+      displayProfile: false
     }
 
     this.updateFiltered = this.updateFiltered.bind(this);
     this.grabEmployeeData = this.grabEmployeeData.bind(this);
+    this.updateDisplayProfile = this.updateDisplayProfile.bind(this);
   }
 
   componentDidMount () {
@@ -162,6 +165,10 @@ class App extends React.Component {
 
     console.log(this.state.targetEmployee)
   }
+
+  updateDisplayProfile () {
+    this.setState({displayProfile: !this.state.displayProfile})
+  }
   
 
   render () {
@@ -169,14 +176,24 @@ class App extends React.Component {
 
     return (
       <div className={'wrapper'}>
+      {this.state.displayProfile === false && 
         <EmployeeFinderHeader 
         updateFiltered={this.updateFiltered}
         />
+      }
+      {this.state.displayProfile === false && 
         <EmployeeFinderContent 
         filtered={filtered}
         employees={employees}
         grabEmployeeData={this.grabEmployeeData}
+        updateDisplayProfile={this.updateDisplayProfile}
         />
+      }
+      {this.state.displayProfile === true && 
+        <EmployeeProfileHeader 
+        updateDisplayProfile={this.updateDisplayProfile}
+        />
+      }
       </div>
     );
   }

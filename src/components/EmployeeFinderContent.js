@@ -2,8 +2,10 @@ import '../css/EmployeeFinderContent.css';
 import EmployeeAvatar from './EmployeeAvatar';
 
 const EmployeeFinderContent = (props) => {
-    const { employees, filtered, grabEmployeeData } = props;
+    const { employees, filtered, grabEmployeeData, updateDisplayProfile } = props;
 
+
+    // sort the employee names alphabetically
     employees.sort((a, b) => {
         if (a.name > b.name) {
           return 1;
@@ -13,7 +15,9 @@ const EmployeeFinderContent = (props) => {
       });
 
     return (
-        <div className={'employee-finder-content'}>
+        <div 
+        onClick={updateDisplayProfile}
+        className={'employee-finder-content'}>
       {filtered === null
         ? employees.map((person) => {
             return (

@@ -1,6 +1,10 @@
 .employee-finder-header-title {
   margin-left: 10rem;
-  font-family: "Montserrat", sans-serif;
-  /* color: #202121; */
-  color: #9e6240;
+  font-family: "Pacifico", cursive;
+  font-size: 2.3rem;
+  color: #cd4631;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
 }
