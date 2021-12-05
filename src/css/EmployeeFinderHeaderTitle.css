@@ -1,10 +1,11 @@
 .employee-finder-header-title {
   margin-left: 10rem;
   font-family: "Pacifico", cursive;
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #cd4631;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
+  margin-top: -10px;
 }

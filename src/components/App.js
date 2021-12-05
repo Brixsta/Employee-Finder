@@ -2,6 +2,7 @@ import '../css/App.css';
 import EmployeeFinderHeader from './EmployeeFinderHeader';
 import EmployeeFinderContent from './EmployeeFinderContent';
 import EmployeeProfileHeader from './EmployeeProfileHeader';
+import EmployeeProfileContent from './EmployeeProfileContent';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -19,9 +20,10 @@ class App extends React.Component {
           age: 58,
           department: "Finance",
           title: "CEO",
-          email: "Joe_Exotic@corp.com",
+          email: "Cristian_Perez@corp.com",
           phoneNumber: "(287)-321-0213",
           hireDate: "January 9, 2004",
+          location: "New York, NY"
         },
         {
           name: "Tyler Watson",
@@ -29,9 +31,10 @@ class App extends React.Component {
           age: 58,
           department: "Accounting",
           title: "Controller",
-          email: "John_Finaly@corp.com",
+          email: "Tyler_Watson@corp.com",
           phoneNumber: "(498)-132-9988",
           hireDate: "February 19, 2014",
+          location: "San Franciso, CA"
         },
         {
           name: "Sarah Saxton",
@@ -39,9 +42,10 @@ class App extends React.Component {
           age: 58,
           department: "Marketing",
           title: "Director of Marketing",
-          email: "Travis_Maldonado@corp.com",
+          email: "Sarah_Saxton@corp.com",
           phoneNumber: "(913)-139-1111",
           hireDate: "September 21, 2020",
+          location: "Portland, OR"
         },
         {
           name: "Kim Baskin",
@@ -49,9 +53,10 @@ class App extends React.Component {
           age: 60,
           department: "Human Resources",
           title: "Human Resources Specialist I",
-          email: "Carol_Baskin@corp.com",
+          email: "Kim_Baskin@corp.com",
           phoneNumber: "(676)-333-3232",
           hireDate: "March 4, 2018",
+          location: "Baltimore, Maryland"
         },
         {
           name: "Jeff Tims",
@@ -59,9 +64,10 @@ class App extends React.Component {
           age: 56,
           department: "Finance",
           title: "CFO",
-          email: "Jeff_Lowe@corp.com",
+          email: "Jeff_Tims@corp.com",
           phoneNumber: "(101)-913-3004",
           hireDate: "December 16, 2016",
+          location: 'Antioch, California'
         },
         {
           name: "Tyler Antle",
@@ -69,9 +75,10 @@ class App extends React.Component {
           age: 61,
           department: "Accounting",
           title: "Senior Auditor",
-          email: "Bhagavan_Antle@corp.com",
+          email: "Tyler_Antle@corp.com",
           phoneNumber: "(424)-126-1593",
           hireDate: "August 31, 2015",
+          location: 'Austin, TX'
         },
         {
           name: "Catrina White",
@@ -79,9 +86,10 @@ class App extends React.Component {
           age: 42,
           department: "IT",
           title: "IT Specialist I",
-          email: "Tim_Stark@corp.com",
+          email: "Catrina_White@corp.com",
           phoneNumber: "(312)-309-9831",
           hireDate: "June 15, 2021",
+          location: 'Houston, TX'
         },
         {
           name: "Will Reinke",
@@ -89,9 +97,10 @@ class App extends React.Component {
           age: 48,
           department: "Legal",
           title: "Paralegal III",
-          email: "John_Reinke@corp.com",
+          email: "Will_Reinke@corp.com",
           phoneNumber: "(981)-131-3333",
           hireDate: "April 19, 2008",
+          location: 'Canton, OH'
         },
         {
           name: "Kelci Kind",
@@ -99,9 +108,10 @@ class App extends React.Component {
           age: 35,
           department: "Marketing",
           title: "Advertising Executive",
-          email: "Kelci_Saffery@corp.com",
+          email: "Kelci_Kind@corp.com",
           phoneNumber: "(503)-231-8848",
           hireDate: "April 5, 2019",
+          location: "San Francisco, CA"
         },
         {
           name: "Don Lewis",
@@ -112,6 +122,7 @@ class App extends React.Component {
           email: "Don_Lewis@corp.com",
           phoneNumber: "(613)-676-8390",
           hireDate: "August 10, 2020",
+          location: 'Houston, TX'
         },
         {
           name: "Richard Holder",
@@ -119,9 +130,10 @@ class App extends React.Component {
           age: 68,
           department: "IT",
           title: "IT Specialist II",
-          email: "Howard_Baskin@corp.com",
+          email: "Richard_Holder@corp.com",
           phoneNumber: "(143)-444-1616",
           hireDate: "May 1, 2011",
+          location: 'Austin, TX'
         },
       ],
       filtered: null,
@@ -162,8 +174,6 @@ class App extends React.Component {
         this.setState({ targetEmployee: employee });
       }
     });
-
-    console.log(this.state.targetEmployee)
   }
 
   updateDisplayProfile () {
@@ -172,7 +182,7 @@ class App extends React.Component {
   
 
   render () {
-    const { employees, filtered } = this.state;
+    const { employees, filtered, targetEmployee } = this.state;
 
     return (
       <div className={'wrapper'}>
@@ -189,10 +199,15 @@ class App extends React.Component {
         updateDisplayProfile={this.updateDisplayProfile}
         />
       }
-      {this.state.displayProfile === true && 
+      {this.state.displayProfile && 
         <EmployeeProfileHeader 
         updateDisplayProfile={this.updateDisplayProfile}
         />
+      }
+      {this.state.displayProfile && 
+      <EmployeeProfileContent 
+      targetEmployee={targetEmployee}
+      />
       }
       </div>
     );
