@@ -22,7 +22,7 @@
 }
 
 .employee-metric-phone-number-title {
-  color: #81adc8;
+  color: rgba(50, 50, 255, 1);
   font-size: 1.9rem;
   user-select: none;
 }

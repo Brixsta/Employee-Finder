@@ -13,11 +13,11 @@
   width: 10rem;
   outline: none;
   font-size: 1.1rem;
-  border: solid 2px #cd4631;
+  border: solid 2px rgba(50, 50, 255, 1);
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
-  color: #cd4631;
+  color: rgba(50, 50, 255, 1);
   font-weight: 900;
   background-color: inherit;
 }

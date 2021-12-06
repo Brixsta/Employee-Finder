@@ -29,12 +29,12 @@
 }
 
 .employee-avatar-text-name {
-  color: #81adc8;
+  color: rgba(50, 50, 255, 1);
   font-size: 1.3rem;
 }
 
 .employee-avatar-text-title {
-  color: #202121;
-  opacity: 0.5;
+  color: black;
+  opacity: 0.4;
   font-size: 1rem;
 }

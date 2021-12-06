@@ -135,6 +135,28 @@ class App extends React.Component {
           hireDate: "May 1, 2011",
           location: 'Austin, TX'
         },
+        {
+          name: "Erica Sanders",
+          id: uuidv4(),
+          age: 38,
+          department: "IT",
+          title: "Legal Analyst",
+          email: "Erica_Sanders@corp.com",
+          phoneNumber: "(493)-940-1006",
+          hireDate: "May 11, 2011",
+          location: 'Houston, TX'
+        },
+        {
+          name: "Diane Martin",
+          id: uuidv4(),
+          age: 35,
+          department: "IT",
+          title: "Financial Analyst",
+          email: "Diane_Martin@corp.com",
+          phoneNumber: "(223)-240-2206",
+          hireDate: "May 1, 2011",
+          location: 'Austin, TX'
+        },
       ],
       filtered: null,
       targetEmployee: '',

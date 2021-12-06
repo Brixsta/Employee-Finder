@@ -2,7 +2,8 @@
   margin-left: 10rem;
   font-family: "Pacifico", cursive;
   font-size: 2rem;
-  color: #cd4631;
+  /* color: #cd4631; */
+  color: rgb(50, 50, 255);
   display: flex;
   justify-content: center;
   align-items: center;
