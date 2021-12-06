@@ -1,5 +1,20 @@
 .employee-metric-location-icon {
   height: 100%;
   width: 20%;
-  background-color: red;
+  position: relative;
+}
+
+.employee-metric-location-icon-alignment {
+  height: 100%;
+  width: 140%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-metric-location-icon-photo {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
 }

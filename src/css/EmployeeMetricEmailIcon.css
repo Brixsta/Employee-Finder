@@ -1,5 +1,21 @@
 .employee-metric-email-icon {
   height: 100%;
   width: 20%;
-  background-color: pink;
+  position: relative;
+}
+
+.employee-metric-email-icon-alignment {
+  width: 140%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-metric-email-icon-photo {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

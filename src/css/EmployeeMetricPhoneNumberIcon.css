@@ -1,5 +1,21 @@
 .employee-metric-phone-number-icon {
   height: 100%;
   width: 20%;
-  background-color: blue;
+  position: relative;
+}
+
+.employee-metric-phone-number-icon-alignment {
+  height: 100%;
+  width: 140%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee-metric-phone-number-icon-photo {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
