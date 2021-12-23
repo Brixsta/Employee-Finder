@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .employee-avatar {
-    height: 360px;
-    width: 360px;
     background-color: white;
     margin: 2rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .employee-avatar:nth-child(1),
@@ -20,10 +22,13 @@ const Styles = styled.div`
   }
 
   .employee-avatar-photo {
-    width: 100%;
-    height: 270px;
-    background-color: black;
+    height: 17rem;
+    width: 23rem;
+    background-color: green;
+    background-size: cover;
+    background-position: center;
     transition: all 0.3s ease-in-out;
+    background-repeat: no-repeat;
   }
 
   .employee-avatar-photo-container {
@@ -31,13 +36,14 @@ const Styles = styled.div`
   }
 
   .employee-avatar-text-container {
-    height: 90px;
-    width: 360px;
-    background-color: white;
+    height: 6rem;
+    width: 100%;
     font-family: "Roboto Slab", serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
   }
 
   .employee-avatar-text {
@@ -69,6 +75,30 @@ const Styles = styled.div`
     color: black;
     opacity: 0.4;
     font-size: 1rem;
+  }
+
+  @media only screen and (max-width: 450px) {
+    .employee-avatar-photo {
+      height: 14.7rem;
+      width: 20rem;
+      background-size: cover;
+    }
+
+    .employee-avatar-text-container {
+      height: 5.3 rem;
+      backgroud-color: purple;
+    }
+
+    .employee-avatar {
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .employee-avatar-photo {
+      height: 12.49rem;
+      width: 17rem;
+      background-size: cover;
+    }
   }
 `;
 

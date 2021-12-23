@@ -4,6 +4,7 @@ import { Content } from "./styled/Content.styled";
 import { v4 as uuidv4 } from "uuid";
 import { Header } from "./styled/Header.styled";
 import { Profile } from "./styled/Profile.styled";
+
 class App extends React.Component {
   constructor() {
     super();

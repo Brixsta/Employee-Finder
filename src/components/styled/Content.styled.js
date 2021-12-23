@@ -3,12 +3,13 @@ import { Avatar } from "./Avatar.styled";
 
 const Styles = styled.div`
   .employee-finder-content {
-    width: 1440px;
+    width: 90%;
     background-color: rgb(240, 240, 240);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: auto;
   }
 `;
 

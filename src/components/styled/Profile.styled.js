@@ -67,7 +67,6 @@ const Styles = styled.div`
 `;
 
 export const Profile = ({ targetEmployee }) => {
-  console.log(targetEmployee.name);
   const name = targetEmployee.name
     .split(" ")
     .map((i) => i[0].toUpperCase() + i.slice(1))
