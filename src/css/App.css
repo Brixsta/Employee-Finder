@@ -17,17 +17,18 @@ html {
 
 .employee-profile-header {
   height: 80px;
-  width: 100%;
-  background-color: white;
+  width: 100vw;
+  background-color: pink;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-bottom: 1px solid rgb(210, 210, 210);
   box-sizing: border-box;
 }
 
 .employee-profile-header-content {
   height: 100%;
-  width: 1440px;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,4 +52,11 @@ html {
 
 .go-back-button:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 890px) {
+  .go-back-button {
+    margin-left: 0;
+    margin: auto;
+  }
 }

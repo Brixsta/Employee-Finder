@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .employee-metrics {
-    width: 785px;
-    height: 360px;
+    width: 35rem;
+    height: 22.5rem;
     background-color: white;
-    margin: 0rem 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -178,6 +177,14 @@ const Styles = styled.div`
     opacity: 0.5;
     font-size: 1.1rem;
     margin-top: 0.25rem;
+  }
+
+  @media only screen and (max-width: 1230px) {
+  }
+
+  @media only screen and (max-width: 890px) {
+    .employee-metrics {
+    }
   }
 `;
 

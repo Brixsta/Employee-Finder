@@ -3,24 +3,29 @@ import { Metrics } from "./Metrics.styled";
 
 const Styles = styled.div`
   .employee-profile-content {
-    width: 1440px;
+    width: 100%;
     background-color: rgb(240, 240, 240);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: orange;
+    box-sizing: border-box;
   }
 
   .employee-spotlight {
-    height: 360px;
-    width: 360px;
+    height: 22.5rem;
+    width: 22.5rem;
     background-color: white;
-    margin: 4rem 2rem;
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .employee-spotlight-photo {
     width: 100%;
-    height: 270px;
+    height: 17rem;
     background-color: black;
   }
 
@@ -63,6 +68,17 @@ const Styles = styled.div`
     color: black;
     opacity: 0.4;
     font-size: 1rem;
+  }
+
+  @media only screen and (max-width: 1191px) {
+    .employee-spotlight {
+      margin-bottom: 2rem;
+    }
+
+    .employee-profile-content {
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 `;
 

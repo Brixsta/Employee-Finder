@@ -21,7 +21,16 @@ const Styles = styled.div`
     justify-content: center;
     align-items: center;
     user-select: none;
-    margin-top: -10px;
+  }
+  h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    color: rgb(50, 50, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    display: none;
   }
 
   @media only screen and (max-width: 615px) {
@@ -36,12 +45,12 @@ const Styles = styled.div`
   }
   @media only screen and (max-width: 420px) {
     h1 {
-      font-size: 1.3em;
-    }
-  }
-  @media only screen and (max-width: 350px) {
-    h1 {
       display: none;
+      position: relative;
+    }
+
+    h2 {
+      display: inline-block;
     }
   }
 `;
@@ -54,6 +63,7 @@ export const Header = ({
   <Styles>
     <header className={"employee-finder-header"}>
       <h1>Employee Finder</h1>
+      <h2>E F</h2>
       <SearchBar
         updateFiltered={updateFiltered}
         updateSearchBarText={updateSearchBarText}

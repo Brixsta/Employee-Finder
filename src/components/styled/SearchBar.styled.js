@@ -16,7 +16,6 @@ const Styles = styled.div`
 
   @media only screen and (max-width: 615px) {
     input {
-      padding: 0.7rem 1rem;
       width: 16rem;
     }
   }
@@ -28,11 +27,6 @@ const Styles = styled.div`
   @media only screen and (max-width: 470px) {
     input {
       width: 12rem;
-    }
-  }
-  @media only screen and (max-width: 420px) {
-    input {
-      width: 10rem;
     }
   }
 `;
