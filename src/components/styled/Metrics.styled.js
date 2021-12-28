@@ -45,7 +45,7 @@ const Styles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto Slab", serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   .employee-metric-department-title {
@@ -99,7 +99,7 @@ const Styles = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Roboto Slab", serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   .employee-metric-email-content::before {
@@ -163,7 +163,7 @@ const Styles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto Slab", serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   .employee-metric-phone-number-title {

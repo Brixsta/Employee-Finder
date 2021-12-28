@@ -19,12 +19,12 @@ const Styles = styled.div`
       width: 16rem;
     }
   }
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 550px) {
     input {
       width: 14rem;
     }
   }
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 350px) {
     input {
       width: 12rem;
     }

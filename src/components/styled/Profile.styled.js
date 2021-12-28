@@ -33,7 +33,7 @@ const Styles = styled.div`
     height: 90px;
     width: 360px;
     background-color: white;
-    font-family: "Roboto Slab", serif;
+    font-family: "Open Sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +78,55 @@ const Styles = styled.div`
     .employee-profile-content {
       justify-content: center;
       flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .employee-metrics {
+      width: 22.5rem;
+    }
+
+    .employee-metric-department-title,
+    .employee-metric-email-title,
+    .employee-metric-phone-number-title {
+      font-size: 1.5rem;
+    }
+
+    .employee-metric-department-icon-alignment {
+    }
+
+    .employee-metric-department-icon-photo,
+    .employee-metric-email-icon-photo,
+    .employee-metric-phone-number-icon-photo {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 470px) {
+    .employee-metrics {
+      background-color: red;
+      width: 18rem;
+    }
+
+    .employee-profile-content {
+      padding: 0;
+      padding: 2rem 0rem;
+    }
+
+    .employee-spotlight {
+      width: 18rem;
+    }
+
+    .employee-spotlight-text-container {
+      width: 18rem;
+    }
+
+    .employee-metric-department-icon-photo,
+    .employee-metric-email-icon-photo,
+    .employee-metric-phone-number-icon-photo {
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
 `;

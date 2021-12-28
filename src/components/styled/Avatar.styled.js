@@ -38,7 +38,7 @@ const Styles = styled.div`
   .employee-avatar-text-container {
     height: 6rem;
     width: 100%;
-    font-family: "Roboto Slab", serif;
+    font-family: "Open Sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -33,17 +33,7 @@ const Styles = styled.div`
     display: none;
   }
 
-  @media only screen and (max-width: 615px) {
-    h1 {
-      font-size: 1.7em;
-    }
-  }
-  @media only screen and (max-width: 470px) {
-    h1 {
-      font-size: 1.5em;
-    }
-  }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 490px) {
     h1 {
       display: none;
       position: relative;
