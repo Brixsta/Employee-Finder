@@ -10,7 +10,7 @@ const Styles = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
-    background-color: orange;
+    // background-color: orange;
     box-sizing: border-box;
   }
 
@@ -78,6 +78,13 @@ const Styles = styled.div`
     .employee-profile-content {
       justify-content: center;
       flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 1191px) {
+    .employee-spotlight {
+      margin-left: 0rem;
+      margin-right: 0rem;
     }
   }
 

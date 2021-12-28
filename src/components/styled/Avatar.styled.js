@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Styles = styled.div`
   .employee-avatar {
     background-color: white;
-    margin: 2rem;
+    margin: 0rem 2rem 2rem 2rem;
     cursor: pointer;
     display: flex;
     flex-direction: column;

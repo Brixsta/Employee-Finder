@@ -10,6 +10,8 @@ const Styles = styled.div`
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
 `;
 

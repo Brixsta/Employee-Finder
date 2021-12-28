@@ -3,12 +3,14 @@ import styled from "styled-components";
 const Styles = styled.div`
   .employee-metrics {
     width: 35rem;
-    height: 22.5rem;
+    height: 22.66rem;
     background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 2.5px;
+    margin-left: 1rem;
   }
 
   .employee-metric-department {
@@ -179,11 +181,9 @@ const Styles = styled.div`
     margin-top: 0.25rem;
   }
 
-  @media only screen and (max-width: 1230px) {
-  }
-
-  @media only screen and (max-width: 890px) {
+  @media only screen and (max-width: 1191px) {
     .employee-metrics {
+      margin-left: 0rem;
     }
   }
 `;
