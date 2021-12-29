@@ -112,7 +112,6 @@ const Styles = styled.div`
 
   @media only screen and (max-width: 470px) {
     .employee-metrics {
-      background-color: red;
       width: 18rem;
     }
 
@@ -123,6 +122,16 @@ const Styles = styled.div`
 
     .employee-spotlight {
       width: 18rem;
+      height: 20rem;
+    }
+
+    .employee-spotlight-photo {
+      height: 15rem;
+      background-size: cover;
+    }
+
+    .employee-spotlight-text-container {
+      height: 5rem;
     }
 
     .employee-spotlight-text-container {
@@ -132,8 +141,20 @@ const Styles = styled.div`
     .employee-metric-department-icon-photo,
     .employee-metric-email-icon-photo,
     .employee-metric-phone-number-icon-photo {
-      height: 2.5rem;
-      width: 2.5rem;
+      height: 3rem;
+      width: 3rem;
+    }
+
+    .employee-metric-department-title,
+    .employee-metric-email-title,
+    .employee-metric-phone-number-title {
+      font-size: 1.3rem;
+    }
+
+    .employee-metric-department-name,
+    .employee-metric-email-address,
+    .employee-metric-phone-number-digits {
+      font-size: 1rem;
     }
   }
 `;

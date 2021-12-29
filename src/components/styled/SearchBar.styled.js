@@ -38,6 +38,7 @@ export const SearchBar = ({
 }) => (
   <Styles>
     <input
+      placeholder={"Enter Name"}
       value={searchBarText}
       onChange={(evt) => {
         updateFiltered(evt.target.value);
