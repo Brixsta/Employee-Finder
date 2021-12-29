@@ -3,7 +3,7 @@ import { Avatar } from "./Avatar.styled";
 
 const Styles = styled.div`
   .employee-finder-content {
-    width: 90%;
+    width: 90vw;
     background-color: rgb(240, 240, 240);
     display: flex;
     flex-wrap: wrap;

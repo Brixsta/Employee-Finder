@@ -9,6 +9,7 @@ const Styles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 23rem;
   }
 
   .employee-avatar:nth-child(1),
@@ -22,8 +23,8 @@ const Styles = styled.div`
   }
 
   .employee-avatar-photo {
-    height: 17rem;
-    width: 23rem;
+    height: 100%;
+    width: 100%;
     background-color: green;
     background-size: cover;
     background-position: center;
@@ -33,10 +34,12 @@ const Styles = styled.div`
 
   .employee-avatar-photo-container {
     overflow: hidden;
+    height: 72%;
+    width: 23rem;
   }
 
   .employee-avatar-text-container {
-    height: 6rem;
+    height: 28%;
     width: 100%;
     font-family: "Open Sans", sans-serif;
     display: flex;

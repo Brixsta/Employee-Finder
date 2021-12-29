@@ -10,28 +10,29 @@ const Styles = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
-    // background-color: orange;
     box-sizing: border-box;
   }
 
   .employee-spotlight {
-    height: 22.5rem;
-    width: 22.5rem;
+    height: 23rem;
+    width: 23rem;
     background-color: white;
     margin-top: 0rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    box-sizing: border-box;
   }
 
   .employee-spotlight-photo {
     width: 100%;
-    height: 17rem;
+    height: 72%;
     background-color: black;
+    background-size: cover;
   }
 
   .employee-spotlight-text-container {
-    height: 90px;
-    width: 360px;
+    height: 28%;
+    width: 100%;
     background-color: white;
     font-family: "Open Sans", sans-serif;
     display: flex;
@@ -89,10 +90,6 @@ const Styles = styled.div`
   }
 
   @media only screen and (max-width: 740px) {
-    .employee-metrics {
-      width: 22.5rem;
-    }
-
     .employee-metric-department-title,
     .employee-metric-email-title,
     .employee-metric-phone-number-title {
@@ -160,24 +157,25 @@ const Styles = styled.div`
 `;
 
 export const Profile = ({ targetEmployee }) => {
-  const name = targetEmployee.name
+  const myName = targetEmployee.name
     .split(" ")
     .map((i) => i[0].toUpperCase() + i.slice(1))
     .join(" ");
+
   return (
     <Styles>
       <div className={"employee-profile-content"}>
         <div className={"employee-spotlight"}>
           <div
             style={{
-              backgroundImage: `url("/images/${name} avatar.jpg")`,
+              backgroundImage: `url("/images/${targetEmployee.name} avatar.jpg")`,
             }}
             className={"employee-spotlight-photo"}
           ></div>
 
           <div className={"employee-spotlight-text-container"}>
             <div className={"employee-spotlight-text"}>
-              <h2 className={"employee-spotlight-text-name"}>{name}</h2>
+              <h2 className={"employee-spotlight-text-name"}>{myName}</h2>
               <h3 className={"employee-spotlight-text-title"}>
                 {targetEmployee.title}
               </h3>
