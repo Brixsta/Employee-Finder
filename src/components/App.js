@@ -67,7 +67,7 @@ class App extends React.Component {
           location: "Antioch, California",
         },
         {
-          name: "Tyler Antle",
+          name: "Jose Lozano",
           id: uuidv4(),
           age: 61,
           department: "Accounting",
@@ -166,7 +166,7 @@ class App extends React.Component {
           location: "San Antonio, TX",
         },
         {
-          name: "Jason Cho",
+          name: "Chris Nguyen",
           id: uuidv4(),
           age: 39,
           department: "Human Resources",

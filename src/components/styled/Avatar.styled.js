@@ -25,7 +25,6 @@ const Styles = styled.div`
   .employee-avatar-photo {
     height: 100%;
     width: 100%;
-    background-color: green;
     background-size: cover;
     background-position: center;
     transition: all 0.3s ease-in-out;
