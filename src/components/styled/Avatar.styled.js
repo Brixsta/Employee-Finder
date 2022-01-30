@@ -86,20 +86,21 @@ const Styles = styled.div`
       background-size: cover;
     }
 
+    .employee-avatar {
+      width: 18rem;
+      height: 20rem;
+    }
+
     .employee-avatar-text-container {
-      height: 5.3 rem;
-      backgroud-color: purple;
+      width: 18rem;
+    }
+
+    .employee-avatar-photo-container {
+      width: 18rem;
     }
 
     .employee-avatar {
       margin: 0;
-    }
-  }
-  @media only screen and (max-width: 340px) {
-    .employee-avatar-photo {
-      height: 12.49rem;
-      width: 17rem;
-      background-size: cover;
     }
   }
 `;

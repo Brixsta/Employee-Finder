@@ -128,10 +128,6 @@ const Styles = styled.div`
     }
 
     .employee-spotlight-text-container {
-      height: 5rem;
-    }
-
-    .employee-spotlight-text-container {
       width: 18rem;
     }
 
